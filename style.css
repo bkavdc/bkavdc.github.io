@@ -303,7 +303,14 @@ ul { list-style: none; margin: 0; padding: 0; }
   padding: 0.6rem;
   background: var(--bg-alt);
 }
-.photo-frame img { filter: grayscale(35%) contrast(1.05) brightness(0.92) sepia(8%) hue-rotate(170deg); }
+.photo-frame img {
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top center;
+  filter: grayscale(35%) contrast(1.05) brightness(0.92) sepia(8%) hue-rotate(170deg);
+}
 .photo-frame figcaption {
   font-family: var(--font-mono);
   font-size: 0.75rem;

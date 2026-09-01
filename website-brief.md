@@ -7,24 +7,24 @@
 | 檔案／來源 | 是什麼 | 會用在哪裡 |
 | --- | --- | --- |
 | `./resources/Activity _ Ray Kuo _ LinkedIn.html` | LinkedIn 活動頁面（含個人簡介、經歷摘要、貼文） | 關於我、聯絡方式 |
-| `./resources/01.jpeg`、`02.jpeg`、`03.jpeg` | BrewDog Las Vegas 店內招牌照片 | 作品案例（酒類筆記）、關於我背景 |
-| `./resources/07.jpeg`、`08.jpeg`、`09.jpeg`、`10.jpeg` | 酒吧／釀酒設備現場照片 | 作品案例（酒類筆記） |
-| `./resources/11.jpeg`、`12.jpeg`、`13.jpeg` | 桶裝啤酒設備（keg、CO2 鋼瓶）特寫 | 作品案例（酒類筆記） |
-| `./resources/14.jpeg`、`15.jpeg` | 本人於啤酒活動現場照片（著 BrewDog 服裝） | 開頭自我介紹、關於我 |
-| `./resources/05.jpeg`、`06.jpeg` | 本人工作照（車內，掛 Fermentis 識別證） | 關於我 |
-| `./resources/04.jpeg` | 未逐一開啟，待製作網站時再分類 | （待分類） |
-| IG [@story.between.inks](https://www.instagram.com/story.between.inks/)（公開帳號） | 速寫（urban sketching）作品帳號，簡介：Urban sketcher / Tiny stories teller | 作品案例（速寫本）、聯絡方式 |
-| IG [@beer_snowball](https://www.instagram.com/beer_snowball/)（公開帳號） | 底片攝影帳號，簡介：Large Format/4x5/instax/Film /Beer/Somewhere/Fun | 作品案例（底片攝影）、聯絡方式 |
-| `./post_card/`（24 組照片，檔名已改成數字 `01`–`24`；原為 HEIC 的另附同編號 `.jpg`） | 明信片與貼票照片，含 Postcrossing 國際明信片交換實品（可見「Happy Postcrossing Ray K.」橡皮章、長崎郵戳、日本郵票） | 作品案例（明信片、集郵角落） |
+| `./resources/beer/`（15 張，`01`–`15`） | BrewDog Las Vegas 招牌、酒吧／釀酒設備、桶裝啤酒特寫、本人於啤酒活動現場照片 | 作品案例（酒類）、主題分類（酒類筆記）、關於我背景照片 |
+| `./resources/sketch/`（10 張，`16`、`17`、`27`、`28`、`29`、`30`、`31`、`32`、`34`、`35`） | 鋼筆淡彩速寫作品（台北自來水博物館、Nikon 相機行、台北郵局建築、食物速寫、控制面板等）與本人現場寫生照片 | 作品案例（速寫）、主題分類（速寫本） |
+| `./resources/film/`（18 張，`18`–`26`、`36`–`44`） | 相機收藏與底片攝影相關照片（大片幅 4x5 相機、Leica／Primoflex／Yashica 等古董相機、Super 8 攝影機、底片負片） | 作品案例（底片）、主題分類（底片攝影） |
+| `./resources/postcard/`（1 張，`33`） | 手繪明信片實寄照片，貼有郵票並蓋有台北臨時郵局／台北郵局郵戳 | 作品案例（明信片） |
+| `./resources/stamps/`（目前空） | 尚無專屬集郵照片，集郵角落區塊先沿用 `post_card/` 內的郵票特寫 | （待補） |
+| IG [@story.between.inks](https://www.instagram.com/story.between.inks/)（公開帳號） | 速寫（urban sketching）作品帳號，簡介：Urban sketcher / Tiny stories teller | 作品案例（速寫）、聯絡方式 |
+| IG [@beer_snowball](https://www.instagram.com/beer_snowball/)（公開帳號） | 底片攝影帳號，簡介：Large Format/4x5/instax/Film /Beer/Somewhere/Fun | 作品案例（底片）、聯絡方式 |
+| [LinkedIn](https://www.linkedin.com/in/ray-kuo-a89721370/)（公開個人頁面） | 使用者提供的正式 LinkedIn 個人檔案連結 | 聯絡方式 |
+| `./post_card/`（24 組照片，檔名已改成數字 `01`–`24`；原為 HEIC 的另附同編號 `.jpg`） | 明信片與貼票照片，含 Postcrossing 國際明信片交換實品（可見「Happy Postcrossing Ray K.」橡皮章、長崎郵戳、日本郵票）與各國郵票特寫 | 作品案例（集郵）、主題分類（明信片、集郵角落） |
 
-素材只用來填空，使用者當場說的內容優先於檔案內容；`post_card/` 內原 HEIC 檔都已轉成同編號 `.jpg`，網頁一律引用 `.jpg`／`.jpeg`／`.png`，不要引用 `.heic`。
+素材只用來填空，使用者當場說的內容優先於檔案內容；`resources/` 與 `post_card/` 內原 HEIC 檔都已轉成同編號 `.jpg`，網頁一律引用 `.jpg`／`.jpeg`／`.png`，不要引用 `.heic`。`resources/` 內的照片已依主題分類移進 `beer/`、`sketch/`、`film/`、`postcard/`、`stamps/` 五個子資料夾，引用路徑要包含子資料夾名稱（例如 `./resources/beer/01.jpeg`）。
 
 ## 0-1. 從素材取得的真實資料（只寫檔案裡真的有的，找不到寫「（待補）」）
 
 - 姓名／英文名：Ray Kuo（Jui Kuo）
 - 職稱／頭銜：Draught Beer Technician｜ex-Asahi Breweries Taiwan｜Beer Quality Specialist｜BJCP Beer Judge｜WSET Level 2 in Wine
 - 聯絡方式（Email／GitHub／LinkedIn／社群）：
-  - LinkedIn：有公開頁面
+  - LinkedIn：https://www.linkedin.com/in/ray-kuo-a89721370/
   - IG：@story.between.inks（速寫）、@beer_snowball（底片攝影）
   - Email：bkavdc@gmail.com
 - 經歷重點：
@@ -40,9 +40,10 @@
   - 底片攝影作品（大片幅、4x5、拍立得，IG @beer_snowball）
   - Postcrossing 國際明信片交換實績（`post_card/` 資料夾內容）
 - 可用圖片（相對路徑＋用途）：
-  - `./resources/14.jpeg` → 本人照片，開頭自我介紹／關於我
-  - `./resources/01.jpeg` 等 BrewDog／設備照片 → 酒類筆記區塊
-  - `./post_card/` 內明信片與郵票照片（檔名為 `01`–`24`，HEIC 已轉成同編號 `.jpg`，可直接使用） → 明信片、集郵角落區塊
+  - `./resources/beer/14.jpeg` → 本人照片，開頭自我介紹／關於我
+  - `./resources/beer/01.jpeg` 等 BrewDog／設備照片 → 酒類筆記區塊
+  - `./resources/sketch/`、`./resources/film/`、`./resources/postcard/` → 速寫、底片、明信片區塊（詳見上方素材清單）
+  - `./post_card/` 內明信片與郵票照片（檔名為 `01`–`24`，HEIC 已轉成同編號 `.jpg`，可直接使用） → 明信片、集郵區塊
 
 ## 1. 網站名稱（Q1）
 
@@ -91,6 +92,5 @@
 
 ## 7. 待補事項
 
-- `./resources/04.jpeg` 尚未分類用途
 - 具體要展示的明信片／集郵故事文案（目前只有照片，文字故事需之後補充）
-- 速寫本、底片攝影區塊若要放實際作品圖，需從 IG 另外下載或請 Ray 提供原始檔（目前頁面只能連結 IG 帳號，貼文完整內容需登入才看得到）
+- `resources/stamps/` 資料夾目前是空的，集郵角落若要換成專屬照片，需之後請 Ray 補充

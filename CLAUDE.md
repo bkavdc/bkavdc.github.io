@@ -18,15 +18,18 @@
 這些是從專案資料夾的 LinkedIn 頁面、現場照片、IG 公開帳號與明信片照片實際讀出來的內容，**做網站時直接用，不要重問、也不要另外編一套**。詳細版在 `website-brief.md` 第 0 節。
 
 - 姓名／職稱：Ray Kuo（Jui Kuo）｜Draught Beer Technician、ex-Asahi Breweries Taiwan、Beer Quality Specialist、BJCP Beer Judge、WSET Level 2 in Wine
-- 聯絡方式：Email bkavdc@gmail.com；LinkedIn（公開頁面）、IG @story.between.inks（速寫）、IG @beer_snowball（底片攝影）
+- 聯絡方式：Email bkavdc@gmail.com；LinkedIn https://www.linkedin.com/in/ray-kuo-a89721370/、IG @story.between.inks（速寫）、IG @beer_snowball（底片攝影）
 - 經歷與技能重點：10 年以上酒精飲料產業經驗；於 Asahi Breweries Taiwan 管理 200+ 桶裝啤酒系統、訓練 350+ 人員、支援 400 支出酒閥；2021–2023 負責 BrewDog 台灣品牌技術服務與通路經營；BJCP 啤酒評審、WSET Level 2；即將遷居英國
 - 代表作品或案例：BrewDog 台灣品牌經營經驗、速寫作品（IG @story.between.inks）、底片攝影作品（IG @beer_snowball）、Postcrossing 國際明信片交換實績
-- 圖片（相對路徑 → 用在哪個區塊，全部要補 alt）：
-  - `./resources/14.jpeg`、`15.jpeg` → 開頭自我介紹／關於我（本人照片）
-  - `./resources/01.jpeg`、`02.jpeg`、`03.jpeg` → 主題分類／酒類筆記
-  - `./resources/07.jpeg`、`08.jpeg`、`09.jpeg`、`10.jpeg`、`11.jpeg`、`12.jpeg`、`13.jpeg` → 主題分類／酒類筆記
-  - `./post_card/` 內明信片與郵票照片（檔名為 `01`–`24`，HEIC 已全部轉成同編號 `.jpg`，直接可用） → 主題分類／明信片、集郵角落
-- 標「（待補）」的欄位：頁面上先留合理的佔位文字或直接不放該項，**不要自己編造經歷、數字或客戶名單**。速寫本與底片攝影兩個區塊目前只能連結 IG 帳號，實際作品圖需之後從 IG 另外取得或請 Ray 提供原始檔。
+- 圖片（相對路徑 → 用在哪個區塊，全部要補 alt）：`resources/` 內的照片已依主題分類進 `beer/`、`sketch/`、`film/`、`postcard/`、`stamps/` 五個子資料夾，引用路徑要包含子資料夾名稱：
+  - `./resources/beer/14.jpeg`、`15.jpeg` → 開頭自我介紹／關於我（本人照片）
+  - `./resources/beer/01.jpeg`～`15.jpeg` → 作品案例／主題分類的「酒類」
+  - `./resources/sketch/16.jpg`～`35.jpg`（部分編號） → 作品案例／主題分類的「速寫」
+  - `./resources/film/18.jpg`～`44.jpg`（部分編號） → 作品案例／主題分類的「底片」
+  - `./resources/postcard/33.jpg` → 作品案例的「明信片」
+  - `./resources/stamps/`（目前空） → 集郵角落尚無專屬照片，先沿用 `post_card/` 的郵票特寫
+  - `./post_card/` 內明信片與郵票照片（檔名為 `01`–`24`，HEIC 已全部轉成同編號 `.jpg`，直接可用） → 作品案例／主題分類的「明信片」「集郵」
+- 標「（待補）」的欄位：頁面上先留合理的佔位文字或直接不放該項，**不要自己編造經歷、數字或客戶名單**。`resources/stamps/` 目前是空的，集郵角落若要換成專屬照片，需之後請 Ray 補充。
 
 ## 目標受眾
 
@@ -45,10 +48,10 @@
 
 1. 開頭自我介紹：一句話講清楚「漫遊酒途」在分享什麼、Ray 是誰
 2. 關於我：Ray 的酒類產業背景（Asahi、BrewDog、BJCP／WSET）＋速寫、底片攝影、集郵等生活品味興趣
-3. 作品案例：酒類、速寫、底片攝影、明信片、集郵故事精選（含 Postcrossing）
+3. 作品案例：5 張卡片，順序與主題分類一致——酒類（大卡，佔滿一整排）／速寫／底片／明信片／集郵（後 4 張排成 2×2，一排兩個）
 4. 主題分類（依此順序）：酒類筆記／速寫本／底片攝影／明信片／集郵角落，各自簡短說明會分享什麼內容
 5. 邀稿與合作方式：說明歡迎哪些形式的邀稿或合作（例如品飲交流、聯名內容、明信片交換）
-6. 聯絡方式：Email（bkavdc@gmail.com）、LinkedIn、IG（@story.between.inks、@beer_snowball）
+6. 聯絡方式：Email（bkavdc@gmail.com）、LinkedIn（https://www.linkedin.com/in/ray-kuo-a89721370/）、IG（@story.between.inks、@beer_snowball）
 
 ## 文案規範
 
@@ -65,6 +68,7 @@
 - 色彩方向：黑＋藏青／灰藍為主，低彩度，像雨夜濕路面反光的路燈；點綴一點威士忌琥珀色或雪茄煙霧的暖灰
 - 插圖／圖像風格：鋼筆淡彩速寫線稿，交叉影線（hatching）筆觸，適合放雨滴、煙霧、酒杯反光等細節，可呼應 `story.between.inks` 的速寫風格
 - 動畫與互動：克制、緩慢，像走進地下室酒吧的節奏，輕柔淡入、滑順不花俏，hover 效果像燈光微微搖曳；整體偏克制，不要俏皮活潑的效果
+- **照片一律不要套用濾鏡（不要 grayscale／sepia／duotone 之類的 CSS filter）**：這是使用者明確要求過的，直接顯示照片原色即可，深色氛圍靠版面與色塊營造，不要靠濾鏡處理照片本身。
 
 ## 技術限制（硬性護欄，一定要遵守）
 
@@ -72,7 +76,8 @@
 - **絕對不要使用 React／Vue／Next.js 等框架，不要 npm install、不要 build 步驟、不要打包工具。** 若 frontend-design 想搭框架，一律改回原生 HTML/CSS/JS。
 - **CSS、JS、圖片一律用相對路徑 `./`（例如 `./style.css`、`./photo.jpg`）**，可攜、穩定，不管部署在哪都不會壞。
 - 所有內容寫在單一頁面，用錨點連結切換段落。手機版需正常顯示。
-- `post_card/`、`resources/` 內的檔名都已改成數字（`post_card/` 為 `01`–`24`，`resources/` 為 `01`–`15`）；`post_card/` 內原 HEIC 圖檔已全部轉成同編號 `.jpg`（訪談階段用 `sips` 轉好），網頁一律引用 `.jpg`／`.jpeg`／`.png` 版本，不要引用 `.heic`。
+- `post_card/`、`resources/` 內的檔名都已改成數字（`post_card/` 為 `01`–`24`，`resources/` 為 `01`–`44`）；原 HEIC 圖檔已全部轉成同編號 `.jpg`（用 `sips` 轉好），網頁一律引用 `.jpg`／`.jpeg`／`.png` 版本，不要引用 `.heic`。
+- `resources/` 內的照片已依主題分類進 `beer/`、`sketch/`、`film/`、`postcard/`、`stamps/` 五個子資料夾，之後新增照片也要放進對應子資料夾、延續數字編號，不要散放在 `resources/` 根目錄。
 
 ## 部署到 GitHub Pages（做完就上線，並在瀏覽器打開）
 

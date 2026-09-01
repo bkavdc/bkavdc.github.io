@@ -8,3 +8,9 @@ resources/Activity _ Ray Kuo _ LinkedIn_files/
 # HEIC 原始檔瀏覽器無法直接顯示，網站只用轉出來的 .jpg/.png，原始 HEIC 留在本機就好，不推上公開 repo
 post_card/*.heic
 post_card/*.HEIC
+resources/**/*.heic
+resources/**/*.HEIC
+
+# 影片檔網站沒用到，不推上公開 repo
+resources/*.MOV
+resources/*.mov

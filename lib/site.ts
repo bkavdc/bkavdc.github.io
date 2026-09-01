@@ -3,7 +3,7 @@ export const SITE = {
   title: "Ray K. — Drinks, Film, Sketch, Postcards, Stamps",
   description:
     "Ray Kuo is a draught beer technician and BJCP judge with close to a decade in the beverage industry. This is where he collects stories — one bottle, one frame, one sketch, one postcard, one stamp at a time.",
-  url: "https://raykuo.vercel.app", // TODO: replace once the final Vercel / custom domain is confirmed
+  url: "https://ray-and-beer.vercel.app", // TODO: swap for a custom domain if/when Ray sets one up
   email: "bkavdc@gmail.com",
   linkedin: "https://www.linkedin.com/in/ray-kuo-a89721370/",
   igSketch: "https://www.instagram.com/story.between.inks/",

@@ -1,0 +1,10 @@
+.DS_Store
+.claude/
+
+# LinkedIn 存檔頁：內容已抽取進 website-brief.md，原始頁面含第三方使用者資料與 LinkedIn 版權內容，不公開推送
+resources/Activity _ Ray Kuo _ LinkedIn.html
+resources/Activity _ Ray Kuo _ LinkedIn_files/
+
+# HEIC 原始檔瀏覽器無法直接顯示，網站只用轉出來的 .jpg/.png，原始 HEIC 留在本機就好，不推上公開 repo
+post_card/*.heic
+post_card/*.HEIC

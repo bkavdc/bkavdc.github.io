@@ -1,16 +1,58 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
 .DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# claude code project settings
 .claude/
 
-# LinkedIn 存檔頁：內容已抽取進 website-brief.md，原始頁面含第三方使用者資料與 LinkedIn 版權內容，不公開推送
-resources/Activity _ Ray Kuo _ LinkedIn.html
-resources/Activity _ Ray Kuo _ LinkedIn_files/
+# LinkedIn 存檔頁：內容已抽取進網站文案，原始頁面含第三方使用者資料與 LinkedIn 版權內容，不公開推送
+public/images/Activity _ Ray Kuo _ LinkedIn.html
+public/images/Activity _ Ray Kuo _ LinkedIn_files/
 
 # HEIC 原始檔瀏覽器無法直接顯示，網站只用轉出來的 .jpg/.png，原始 HEIC 留在本機就好，不推上公開 repo
-post_card/*.heic
-post_card/*.HEIC
-resources/**/*.heic
-resources/**/*.HEIC
+public/images/**/*.heic
+public/images/**/*.HEIC
+public/postcards/*.heic
+public/postcards/*.HEIC
 
 # 影片檔網站沒用到，不推上公開 repo
-resources/*.MOV
-resources/*.mov
+public/images/*.MOV
+public/images/*.mov

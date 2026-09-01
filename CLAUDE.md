@@ -1,135 +1,77 @@
-# 專案設定：個人品牌網站
+# 專案設定：Ray K. — Editorial Personal Website
 
-> 這份設定是「護欄＋內容」。網站的視覺美學（配色、字體配對、動效、排版細節）交給 frontend-design plugin 發揮，這裡只負責把它框在正確的內容、風格方向與技術限制內，不要在這份檔案裡把顏色字體鎖死。
+> 這份設定是「護欄＋內容」。2026-09-01 從舊版一頁式靜態網站（純 HTML/CSS/JS＋GitHub Pages）全面重構為
+> multi-page editorial 個人網站（Next.js + Tailwind + MDX + Vercel）。**這份文件取代舊版 CLAUDE.md 的所有硬性限制**——
+> 舊版禁止框架、禁止 build、要求一頁式、部署 GitHub Pages 那些規則已不適用，不要照舊版邏輯行動。
 
 ## 溝通方式
 
-- 一律使用繁體中文回覆，並用白話文解釋你做了什麼。
-- 每次修改前先說明打算怎麼改，等我確認再執行。
-- 一次只改一個區塊，不要整站重寫。
+- 一律使用繁體中文回覆使用者，並用白話文解釋做了什麼。
+- 大規模改動（換框架、換部署平台、整站重構）前一定要先說明並取得確認；小範圍調整（改文案、調色、修 bug）可以直接做完再回報，不用每次都先問。
+- 網站「內容語言」是英文（見下方說明），跟「跟使用者對話」用中文是兩件事，不要搞混。
 
-## 網站名稱與定位
+## 網站定位
 
-- 網站名稱：漫遊酒途
-- 一句話定位：Ray 用來分享酒類、旅遊、集郵、明信片、速寫與底片攝影生活品味的個人隨筆網站，讓同好認識他、累積人脈。
+不是「我有五個興趣」的展示頁，而是「我是誰、我如何觀看與收藏這個世界」的 editorial personal website。核心概念是
+**Collecting Stories**：Drinks 是 Ray 的 profession，Film／Sketch／Postcards／Stamps 是他探索與記錄世界的方式。Drinks 是網站裡份量最重的分類，不要把五個分類做成平等並列的興趣清單。
 
-## 可用素材與真實資料（訪談階段已讀過，直接拿來用）
+視覺／文案參考 [dixitwine.com](https://www.dixitwine.com/) 的 editorial／wine magazine 調性（強字體、大量留白、圖片主導），**不要直接抄它的版型**。禁止做成「復古主題網站」（郵票邊框、蓋章特效、手寫體氾濫）——設計要安靜、成熟，讓內容自己說話。
 
-這些是從專案資料夾的 LinkedIn 頁面、現場照片、IG 公開帳號與明信片照片實際讀出來的內容，**做網站時直接用，不要重問、也不要另外編一套**。詳細版在 `website-brief.md` 第 0 節。
+## 內容語言：英文
 
-- 姓名／職稱：Ray Kuo（Jui Kuo）｜Draught Beer Technician、ex-Asahi Breweries Taiwan、Beer Quality Specialist、BJCP Beer Judge、WSET Level 2 in Wine
-- 聯絡方式：Email bkavdc@gmail.com；LinkedIn https://www.linkedin.com/in/ray-kuo-a89721370/、IG @story.between.inks（速寫）、IG @beer_snowball（底片攝影）
-- 經歷與技能重點：10 年以上酒精飲料產業經驗；於 Asahi Breweries Taiwan 管理 200+ 桶裝啤酒系統、訓練 350+ 人員、支援 400 支出酒閥；2021–2023 負責 BrewDog 台灣品牌技術服務與通路經營；BJCP 啤酒評審、WSET Level 2；即將遷居英國
-- 代表作品或案例：BrewDog 台灣品牌經營經驗、速寫作品（IG @story.between.inks）、底片攝影作品（IG @beer_snowball）、Postcrossing 國際明信片交換實績
-- 圖片（相對路徑 → 用在哪個區塊，全部要補 alt）：`resources/` 內的照片已依主題分類進 `beer/`、`sketch/`、`film/`、`postcard/`、`stamps/` 五個子資料夾，引用路徑要包含子資料夾名稱：
-  - `./resources/beer/14.jpeg`、`15.jpeg` → 開頭自我介紹／關於我（本人照片）
-  - `./resources/beer/01.jpeg`～`15.jpeg` → 作品案例／主題分類的「酒類」
-  - `./resources/sketch/16.jpg`～`35.jpg`（部分編號） → 作品案例／主題分類的「速寫」
-  - `./resources/film/18.jpg`～`44.jpg`（部分編號） → 作品案例／主題分類的「底片」
-  - `./resources/postcard/33.jpg` → 作品案例的「明信片」
-  - `./resources/stamps/`（目前空） → 集郵角落尚無專屬照片，先沿用 `post_card/` 的郵票特寫
-  - `./post_card/` 內明信片與郵票照片（檔名為 `01`–`24`，HEIC 已全部轉成同編號 `.jpg`，直接可用） → 作品案例／主題分類的「明信片」「集郵」
-- 標「（待補）」的欄位：頁面上先留合理的佔位文字或直接不放該項，**不要自己編造經歷、數字或客戶名單**。`resources/stamps/` 目前是空的，集郵角落若要換成專屬照片，需之後請 Ray 補充。
+2026-09-01 這次重構，網站文案全部改成英文（首頁、五個分類、About、Contact 皆是）。原因：使用者當次需求訊息整段用英文書寫，且範例文案（"Collecting stories, one bottle..."）都是英文；使用者即將搬到英國、參考站 dixitwine.com 也是英文站。**這是我（Claude）在缺乏明確語言指示時做的判斷，不是使用者明確要求**——如果使用者之後想要中文版或雙語，屬於合理的後續調整，直接照做即可，不算否定先前決策。
 
-## 目標受眾
+## 目標受眾與行動
 
-- 對象：跟 Ray 興趣相同的同好——酒類、速寫、底片攝影、明信片、集郵愛好者（旅遊是貫穿所有分類的共同背景，不獨立成分類）
-- 我能幫他們解決的問題：分享酒類專業知識與旅途中的酒吧故事、手繪速寫記錄的生活片段、底片攝影作品、明信片背後的故事（含 Postcrossing）、集郵小知識
-- 因此網站文案要優先回答的問題：「這個人在酒類、收藏、創作上分享些什麼？」「跟我興趣一樣嗎？」
+- 對象：酒類／攝影／速寫／明信片／集郵同好，以及可能找 Ray 合作的品牌／媒體／活動窗口。
+- 主要行動：透過 Contact 頁 Email（bkavdc@gmail.com）或 LinkedIn／IG 聯繫；沒有制式合作表單，走「有想法就寫信」的調性。
 
-## 網站目標與行動
+## 真實資料（不要編造，找不到就標 TBD 或詢問）
 
-- 主要目標：讓對酒類、旅遊有興趣的人認識 Ray、累積人脈
-- 主要行動按鈕：追蹤 IG（@story.between.inks／@beer_snowball）或透過 LinkedIn／聯絡方式頁面與 Ray 交流
+- 姓名／職稱：Ray Kuo（Jui Kuo）｜Draught Beer Technician、ex-Asahi Breweries Taiwan（Beer Quality Specialist）、BJCP Beer Judge、WSET Level 2 in Wine。
+- 年資：使用者在 2026-09-01 這次需求訊息裡親口說「約 8 年」酒精飲料產業經驗——**這個數字比舊版網站寫的「10 年以上」更新、更直接，全站以「約 8 年／close to 8 years」為準**，不要混用舊數字。
+- 經歷：Asahi Breweries Taiwan 期間維護 200+ 桶裝啤酒系統、訓練 350+ 人員、支援 400 支出酒閥；2021–2023 於 BrewDog 台灣負責品牌技術服務與通路經營；即將從台灣搬到英國。
+- 聯絡方式：Email bkavdc@gmail.com；LinkedIn https://www.linkedin.com/in/ray-kuo-a89721370/；IG @story.between.inks（速寫）、@beer_snowball（底片）。
+- 素材與內容裡引用的具體事實（BrewDog Las Vegas 招牌、捷克 Zdenda 明信片、長崎浮世繪郵票、韓國 Louis Pasteur 紀念郵票等）都是從 `public/images/`、`public/postcards/` 裡的真實照片直接讀出來的，寫新內容前先看過對應照片，不要憑空編故事。
 
-## 頁面結構（一頁式，依順序）
+## 內容系統（Next.js + MDX）
 
-- **成品至少要有 6 個區塊**，每個區塊都要有實質內容（標題＋幾句文案／幾個項目），不要只放一個標題就帶過，讓頁面看起來完整、有份量。
+- 每篇內容是 `content/<category>/<slug>.mdx`，`category` 為 `drinks`／`film`／`sketch`／`postcards`／`stamps` 其中之一。
+- Frontmatter 欄位：`title`、`date`、`excerpt`、`cover`（圖片路徑，指向 `public/` 底下）、`coverAlt`、`tags`（陣列）；可選：`subcategory`（Drinks 用：Beer/Wine/Spirits/Brewing/Tasting/Industry/People/Places）、`location`（Postcards/Sketch 用）、`medium`（Sketch 用）、`featured`（首頁精選story用，全站只留一篇 `true`）。
+- 讀取邏輯在 `lib/content.ts`（`getAllPosts`、`getPost`、`getFeaturedPost`）；渲染 MDX 內文用 `components/MdxBody.tsx`（`next-mdx-remote/rsc`）。
+- 新增文章：在對應資料夾新增 `.mdx` 檔即可，`generateStaticParams` 會自動抓到，不用改路由程式碼。
+- 沒有寫成獨立文章、只是單純好看的照片，放進 `lib/gallery.ts` 對應分類的陣列（`filmGallery`／`sketchGallery`／`postcardsGallery`），會出現在該分類頁的「More from the archive」grid，alt text 要寫實際看到的內容，不要編故事。
+- 圖片一律放 `public/images/<category>/` 或 `public/postcards/`，新增圖片後要重新產生尺寸資料：`node scripts/gen-image-dims.mjs`（會更新 `lib/image-dims.json`，讓 `next/image` 知道原始寬高、不強制裁切比例）。
 
-1. 開頭自我介紹：一句話講清楚「漫遊酒途」在分享什麼、Ray 是誰
-2. 關於我：Ray 的酒類產業背景（Asahi、BrewDog、BJCP／WSET）＋速寫、底片攝影、集郵等生活品味興趣
-3. 作品案例：5 張卡片，順序與主題分類一致——酒類（大卡，佔滿一整排）／速寫／底片／明信片／集郵（後 4 張排成 2×2，一排兩個）
-4. 主題分類（依此順序）：酒類筆記／速寫本／底片攝影／明信片／集郵角落，各自簡短說明會分享什麼內容
-5. 邀稿與合作方式：說明歡迎哪些形式的邀稿或合作（例如品飲交流、聯名內容、明信片交換）
-6. 聯絡方式：Email（bkavdc@gmail.com）、LinkedIn（https://www.linkedin.com/in/ray-kuo-a89721370/）、IG（@story.between.inks、@beer_snowball）
+## 技術棧與硬性限制
 
-## 文案規範
+- **Next.js（App Router）+ TypeScript + Tailwind CSS v4（CSS-first，`app/globals.css` 用 `@theme` 定義 token，沒有 `tailwind.config.js`）+ MDX**。
+- 套件管理：npm（`package-lock.json`）。開發機沒有內建 Node，是用官方 tarball 裝到 `/usr/local/bin` 的（見下方「開發環境」）。
+- 部署：**GitHub + Vercel**，push 到 GitHub 後 Vercel 自動 build／deploy，不再用 GitHub Pages。
+- 色彩／字體 token 都在 `app/globals.css`：`--paper`／`--ink`／`--muted`／`--line`／`--accent` 系列；字體用 `next/font/google`（Fraunces 標題、IBM Plex Sans 內文、IBM Plex Mono 標籤／meta），在 `app/layout.tsx` 設定。
+- 圖片一律用 `next/image`，寬高從 `lib/imageDims.ts`（讀 `lib/image-dims.json`）取得，**不要把不同比例的照片強制裁成同一比例**——照片牆用 CSS columns（`components/PhotoGrid.tsx`）做 masonry，保留每張照片原始比例。
+- **照片不套用濾鏡**（延續舊站規範）：不要 grayscale／sepia／duotone 之類的 CSS filter，深色或氛圍感靠版面與色塊營造。
+- 動效克制：淡入用 `.reveal` class + `components/RevealObserver.tsx`（IntersectionObserver），尊重 `prefers-reduced-motion`；不要加彈跳、花俏的動畫函式庫。
 
-- 不要使用的字詞：誇大、業配感、空泛形容詞（例如「頂尖」「業界第一」）
-- 主標題必須在一行內講出「這是誰、在分享什麼」（例如：酒類職人 Ray 的旅遊、收藏與創作隨筆）
+## 開發環境
 
-## 視覺風格（給方向與細節線索，具體執行交給 frontend-design）
+- 這台機器原本沒裝 Node／npm，Homebrew 的 core tap 也停在 4 年前的舊狀態、抓不到 bottle。改用官方 tarball 裝 Node 24 LTS，`node`／`npm`／`npx` 已軟連結到 `/usr/local/bin`（不需要 sudo，該目錄使用者可寫）。之後的 session 應該可以直接用，不用重裝；如果 `node -v` 失敗才需要回頭處理。
+- 本機驗證只用 `npm run build`（＋ `npm run lint`），**不要跑 `npm run dev` 起本機伺服器來預覽**——預覽一律看 Vercel 部署網址，跟舊站規則精神一致。
 
-> 使用者中途把原本的「溫暖可愛」改成以下自訂風格，**以此版本為準，不要用溫暖可愛那套**。
+## 部署流程
 
-- 風格方向與心情關鍵字：陽剛、有氣場、鋼筆速寫調性——像雨夜下班後走進一間地下室雪茄酒吧
-- 排版感覺：偏暗、氛圍感強，留白像速寫本的空白頁，不對稱構圖，內容像一頁頁翻開的筆記
-- 字體感覺：剛硬俐落的無襯線標題（geometric sans），內文可帶一點手寫鋼筆／打字機質感
-- 色彩方向：黑＋藏青／灰藍為主，低彩度，像雨夜濕路面反光的路燈；點綴一點威士忌琥珀色或雪茄煙霧的暖灰
-- 插圖／圖像風格：鋼筆淡彩速寫線稿，交叉影線（hatching）筆觸，適合放雨滴、煙霧、酒杯反光等細節，可呼應 `story.between.inks` 的速寫風格
-- 動畫與互動：克制、緩慢，像走進地下室酒吧的節奏，輕柔淡入、滑順不花俏，hover 效果像燈光微微搖曳；整體偏克制，不要俏皮活潑的效果
-- **照片一律不要套用濾鏡（不要 grayscale／sepia／duotone 之類的 CSS filter）**：這是使用者明確要求過的，直接顯示照片原色即可，深色氛圍靠版面與色塊營造，不要靠濾鏡處理照片本身。
+- **Repo 沿用原本的 `bkavdc/bkavdc.github.io`**（GitHub Pages 專用命名的 repo），但新網站走 Vercel，不受這個命名限制。
+- 重構期間新內容都在 `editorial-redesign` 分支，`main` 分支保留舊版一頁式網站，讓 GitHub Pages（`https://bkavdc.github.io/`）在切換前繼續正常運作。
+- Vercel 專案需要使用者自己完成一次性登入／連接 GitHub repo（Claude 沒有現成的 Vercel 帳號可用，這步驟必須由使用者在瀏覽器完成）。連接後：
+  - 先用 `editorial-redesign` 分支跑一次 Preview Deployment 讓使用者確認新站沒問題。
+  - 使用者確認後，把 `editorial-redesign` merge 進 `main`（此時會覆蓋掉舊站的靜態檔案），Vercel 的 Production Deployment 跟著更新，**再**去 GitHub repo 設定關閉 Pages（`Settings → Pages → Build and deployment → None`），避免兩邊同時服務造成混淆。
+  - 之後每次 push 到 `main`，Vercel 自動重新 build／deploy；push 到其他分支會拿到 Preview Deployment 網址，適合先給使用者看過再合併。
+- `lib/site.ts` 裡的 `SITE.url` 要在 Vercel 網址確定後更新成正式網址（自訂網域或 `*.vercel.app`），否則 sitemap／OG 網址會是暫時值。
 
-## 技術限制（硬性護欄，一定要遵守）
+## 完工前檢查
 
-- **純靜態多檔案網站**：`index.html` + `style.css` + `script.js`，圖片放在專案根目錄。可直接部署 GitHub Pages。
-- **絕對不要使用 React／Vue／Next.js 等框架，不要 npm install、不要 build 步驟、不要打包工具。** 若 frontend-design 想搭框架，一律改回原生 HTML/CSS/JS。
-- **CSS、JS、圖片一律用相對路徑 `./`（例如 `./style.css`、`./photo.jpg`）**，可攜、穩定，不管部署在哪都不會壞。
-- 所有內容寫在單一頁面，用錨點連結切換段落。手機版需正常顯示。
-- `post_card/`、`resources/` 內的檔名都已改成數字（`post_card/` 為 `01`–`24`，`resources/` 為 `01`–`44`）；原 HEIC 圖檔已全部轉成同編號 `.jpg`（用 `sips` 轉好），網頁一律引用 `.jpg`／`.jpeg`／`.png` 版本，不要引用 `.heic`。
-- `resources/` 內的照片已依主題分類進 `beer/`、`sketch/`、`film/`、`postcard/`、`stamps/` 五個子資料夾，之後新增照片也要放進對應子資料夾、延續數字編號，不要散放在 `resources/` 根目錄。
-
-## 部署到 GitHub Pages（做完就上線，並在瀏覽器打開）
-
-這個專案的預期行為就是「做完自動上線、每次改自動更新」。使用者已於課前完成 GitHub 登入（`gh auth login`）。
-
-**首次部署（部署到「使用者主站」，網址沒有子目錄）：**
-
-1. 先取得 GitHub 帳號名：`OWNER=$(gh api user --jq .login)`。
-2. **repo 名稱一定要用 `<帳號>.github.io`**（例如帳號是 `oberonlai` → repo 叫 `oberonlai.github.io`）。這是 GitHub 的「使用者主站」特例，會服務在網域根、**網址沒有子目錄**（`https://<帳號>.github.io/`），不要用其他 repo 名（否則會變成 `/<repo>/` 子目錄）。不需要問使用者要 slug。
-3. 在專案資料夾依序執行（若已是 git repo 就跳過 init）：
-   ```
-   git init
-   git add -A
-   git commit -m "初始個人品牌網站"
-   gh repo create "$OWNER.github.io" --public --source=. --remote=origin --push
-   gh api --method POST "repos/$OWNER/$OWNER.github.io/pages" -f "source[branch]=main" -f "source[path]=/"
-   ```
-   （最後一行啟用 Pages；若回「已存在」的錯誤，忽略即可。）
-4. 網址為 `https://<帳號>.github.io/`（**沒有子目錄**）。**Pages 首次建置約需 1 分鐘**，用瀏覽器打開這個網址展示；若一開始 404，稍等後重整。
-   - 注意：每個 GitHub 帳號只能有一個 `<帳號>.github.io` 主站 repo。若使用者已經有這個 repo，就改成 push 到那個既有 repo（或提醒使用者），不要重建。
-   - **要打開的一定是這個 GitHub Pages 線上網址（`https://...github.io/...`），絕對不要在瀏覽器開本機的 `index.html`（`file://` 或本機路徑）。** 那個視窗對本機檔只會給「沒有樣式的靜態快照」，開了只會誤導。要看成果 = 開線上網址；本機檔一律不開。
-
-**之後每次修改都自動上線：**
-
-- 每次改完網站檔案，**自動執行** `git add -A && git commit -m "更新網站" && git push`，不用問使用者要不要 push——這是本專案已授權的預期行為。
-- Pages 約 30–60 秒後更新，請使用者重整瀏覽器即可看到最新版。
-
-## 不要起本機伺服器、不要自己做預覽檔
-
-- 預覽一律用 GitHub Pages 的網址，**不要起任何本機伺服器**（不要 `python -m http.server`、`php -S`、`npx serve`、`launch.json`），也不要做「暫時合併版」或任何臨時檔。
-- **不要在瀏覽器打開本機的 `index.html`（`file://`）來預覽**，也不要用電腦截圖去驗證本機檔——本機檔在這個瀏覽器視窗只會是沒樣式的快照。唯一的預覽方式是「部署後開 GitHub Pages 網址」。
-
-## 速度優先：一次生成就部署（重要）
-
-現場時間很短，學員要盡快看到成果。所以：
-
-- **一次把網站生成完就部署，不要做截圖打磨迴圈。** 明確禁止：逐段截圖、重新載入等動畫再截圖、讀截圖後反覆微調、一個區塊一個區塊反覆調整。
-- 上線展示後，**要不要再美化，等使用者看完提出，再針對他說的地方改**（改完一樣自動 push），不要自己主動反覆優化。
-
-## 完工前品質檢查（做完自己逐項確認）
-
-- [ ] `index.html`／`style.css`／`script.js` 與圖片都在，沒有框架、沒有 node_modules、沒有 build 產物。
-- [ ] CSS／JS／圖片全部用相對路徑 `./`，可攜穩定。
-- [ ] hero 主標題一行講清楚「這是誰、在分享什麼」。
-- [ ] 內容用的是 website-brief.md 的真實文字，沒有 lorem ipsum 或假資料。
-- [ ] 手機版不爆版，圖片都有 alt。
-
-## 素材位置（內容都已整理好，動工前確認一次就好）
-
-- 主要依據：`website-brief.md`（需求主檔，第 0 節是素材清單與從履歷／社群帳號抓出的真實資料）＋ 上面的「可用素材與真實資料」。**素材在訪談階段就已經讀完並整理進文件，不用再從頭研究一次。**
-- 動工前只要快速掃一次專案資料夾，確認兩件事：
-  - 文件裡列的檔案還在（路徑沒被改名或刪掉）。
-  - 有沒有訪談之後才新增的素材（新的作品圖、更新版履歷）——有的話讀進來補進文案，並同步更新 `website-brief.md` 第 0 節。
-- 圖片一律用相對路徑引用（例如 `./photo.jpg`）並補上 alt；圖片會隨 repo 一起 push 上 Pages，正常顯示。
-- 若某些資訊在這些檔案裡找不到，寧可標「（待補）」或詢問，也不要自己編造經歷、數字或客戶案例。
+- [ ] `npm run build`、`npm run lint` 都過。
+- [ ] 內容都是真實資料（履歷事實、從照片讀出來的細節），沒有編造的人名、數字、故事。
+- [ ] 圖片都有真實 alt text，比例沒有被強制裁切。
+- [ ] 手機版（`sm`/`md` breakpoint 以下）版面正常、Nav 選單可用。
+- [ ] `SITE.url`、metadata、sitemap 在網域確定後有更新。

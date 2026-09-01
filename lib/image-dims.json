@@ -1,0 +1,274 @@
+{
+  "/images/beer/01.jpeg": {
+    "width": 1280,
+    "height": 1706
+  },
+  "/images/beer/02.jpeg": {
+    "width": 2048,
+    "height": 1536
+  },
+  "/images/beer/03.jpeg": {
+    "width": 1280,
+    "height": 1707
+  },
+  "/images/beer/04.jpeg": {
+    "width": 2048,
+    "height": 1536
+  },
+  "/images/beer/05.jpeg": {
+    "width": 1206,
+    "height": 905
+  },
+  "/images/beer/06.jpeg": {
+    "width": 2048,
+    "height": 1181
+  },
+  "/images/beer/07.jpeg": {
+    "width": 2048,
+    "height": 1536
+  },
+  "/images/beer/08.jpeg": {
+    "width": 1280,
+    "height": 1707
+  },
+  "/images/beer/09.jpeg": {
+    "width": 1280,
+    "height": 1707
+  },
+  "/images/beer/10.jpeg": {
+    "width": 2048,
+    "height": 1536
+  },
+  "/images/beer/11.jpeg": {
+    "width": 1116,
+    "height": 1466
+  },
+  "/images/beer/12.jpeg": {
+    "width": 1115,
+    "height": 1467
+  },
+  "/images/beer/13.jpeg": {
+    "width": 1120,
+    "height": 1460
+  },
+  "/images/beer/14.jpeg": {
+    "width": 1206,
+    "height": 2622
+  },
+  "/images/beer/15.jpeg": {
+    "width": 1206,
+    "height": 1595
+  },
+  "/images/film/18.jpg": {
+    "width": 1125,
+    "height": 2000
+  },
+  "/images/film/19.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/film/20.jpg": {
+    "width": 2376,
+    "height": 4224
+  },
+  "/images/film/21.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/film/22.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/film/23.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/film/24.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/film/25.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/film/26.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/film/36.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/film/37.jpg": {
+    "width": 2376,
+    "height": 4224
+  },
+  "/images/film/38.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/film/39.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/film/40.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/film/41.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/film/42.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/film/43.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/film/44.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/postcard/33.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/sketch/16.jpg": {
+    "width": 1440,
+    "height": 1920
+  },
+  "/images/sketch/17.jpg": {
+    "width": 1440,
+    "height": 1920
+  },
+  "/images/sketch/27.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/sketch/28.jpg": {
+    "width": 5712,
+    "height": 4284
+  },
+  "/images/sketch/29.jpg": {
+    "width": 1757,
+    "height": 2386
+  },
+  "/images/sketch/30.jpg": {
+    "width": 2355,
+    "height": 1614
+  },
+  "/images/sketch/31.jpg": {
+    "width": 1729,
+    "height": 2423
+  },
+  "/images/sketch/32.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/images/sketch/34.jpg": {
+    "width": 3717,
+    "height": 2788
+  },
+  "/images/sketch/35.jpg": {
+    "width": 2464,
+    "height": 3717
+  },
+  "/postcards/01.jpg": {
+    "width": 1080,
+    "height": 1923
+  },
+  "/postcards/02.jpg": {
+    "width": 1290,
+    "height": 1720
+  },
+  "/postcards/03.jpg": {
+    "width": 1080,
+    "height": 1923
+  },
+  "/postcards/04.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/05.png": {
+    "width": 1206,
+    "height": 2622
+  },
+  "/postcards/06.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/07.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/08.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/09.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/10.jpeg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/11.jpeg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/12.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/13.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/14.png": {
+    "width": 2622,
+    "height": 1206
+  },
+  "/postcards/15.png": {
+    "width": 1206,
+    "height": 2622
+  },
+  "/postcards/16.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/17.jpeg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/18.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/19.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/20.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/21.jpg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/22.jpeg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/23.jpeg": {
+    "width": 4032,
+    "height": 3024
+  },
+  "/postcards/24.jpeg": {
+    "width": 4032,
+    "height": 3024
+  }
+}

@@ -49,8 +49,6 @@ export const postcardsGallery: GalleryImage[] = [
   { src: "/postcards/11.jpeg", alt: "Ray 收藏的明信片" },
   { src: "/postcards/12.jpg", alt: "Ray 收藏的明信片" },
   { src: "/postcards/13.jpg", alt: "Ray 收藏的明信片" },
-  { src: "/postcards/14.png", alt: "Ray 收藏的明信片" },
-  { src: "/postcards/15.png", alt: "Ray 收藏的明信片" },
   { src: "/postcards/16.jpg", alt: "Ray 收藏的明信片" },
   { src: "/postcards/17.jpeg", alt: "Ray 收藏的明信片" },
   { src: "/postcards/18.jpg", alt: "Ray 收藏的明信片" },
